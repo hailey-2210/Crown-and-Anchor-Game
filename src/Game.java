@@ -35,14 +35,14 @@ public class Game {
 		for ( Dice d : dice) {
 			d.roll();
 			if (d.getValue().equals(pick)) { 
-				matches += 1;
+				matches ++;
 			}
 		}
 		
-		int winnings = matches * bet;
+		int winnings = matches * bet; 
 
 		if (matches > 0) {			
-			player.receiveWinnings(winnings);
+			player.receiveWinnings(winnings + bet); // refund the bet
 		}
         return winnings;		
 	}

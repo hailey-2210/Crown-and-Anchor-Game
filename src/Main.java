@@ -17,10 +17,10 @@ public class Main {
 
         int totalWins = 0;
         int totalLosses = 0;
-
+        
         while (true)
         {
-            int winCount = 0;
+        	int winCount = 0;
             int loseCount = 0;
             
             for (int i = 0; i < 100; i++)
@@ -31,8 +31,8 @@ public class Main {
                 player = new Player(name, balance);
                 player.setLimit(limit);
                 int bet = 5;
-
-                System.out.println(String.format("Start Game %d: ", i));
+                
+                System.out.println(String.format("Start Game"));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
                 		player.getName(), player.getBalance(), player.getLimit()));
 
@@ -55,6 +55,7 @@ public class Main {
 	                    System.out.printf("%s won %d, balance now %d\n\n",
 	                    		player.getName(), winnings, player.getBalance());
 	                	winCount++; 
+	         
                     }
                     else {
 	                    System.out.printf("%s lost, balance now %d\n\n",
@@ -76,8 +77,11 @@ public class Main {
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
-        
+	        
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
+        totalWins = 0;
+        totalLosses =0;
+       
 	}
 
 }

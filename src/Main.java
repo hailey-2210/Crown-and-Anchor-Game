@@ -30,11 +30,8 @@ public class Main {
             	int limit = 0;
                 player = new Player(name, balance);
                 player.setLimit(limit);
-                int bet = 10; // change to make the game quicker
-                winCount = 0;
-                loseCount = 0;
+                int bet = 5;
                 
-                System.out.println("--------------------------------------");
                 System.out.println(String.format("Start Game"));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
                 		player.getName(), player.getBalance(), player.getLimit()));

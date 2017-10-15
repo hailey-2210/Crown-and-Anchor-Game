@@ -106,7 +106,7 @@ public class Bug5Test {
 		System.out.println(String.format("Overall win rate = %.1f%%", ratio));
 		System.out.println();
 
-		// assert that odds ratio is not approximately 42% (i.e. within +/- 5%)
+		// assert that odds ratio is not approximately 42% (within +/- 5%)
 
 		assertTrue((ratio >= 0.95*DESIRED_RATIO) && (ratio <= 1.05*DESIRED_RATIO));
 

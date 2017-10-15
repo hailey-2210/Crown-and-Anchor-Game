@@ -14,6 +14,7 @@ import game.Game;
  * This is an automated test to create the bug that 
  * SPADE is never picked
  * SPADE is never rolled
+ * This test is complement to DiceValueTest
  */
 
 public class Bug4Test {

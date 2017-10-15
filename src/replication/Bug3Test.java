@@ -9,6 +9,7 @@ import game.Game;
 
 /**
  * This is an automated test to create the bug that the dice values are the same for each game
+ * This test does not assert equals, but just observe results from console
  */
 
 public class Bug3Test {

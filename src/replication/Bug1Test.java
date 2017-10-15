@@ -66,6 +66,7 @@ public class Bug1Test {
 		game = new Game(dAnchor, dAnchor, dDiamond);
 		int winnings = game.playRound(player, pickHeart, BET);
 		cdv = game.getDiceValues();
+		System.out.print("No match test");
 		System.out.printf("Rolled %s, %s, %s\n", cdv.get(0), cdv.get(1), cdv.get(2));
 		System.out.printf("%s bet %d on %s\n", player.getName(), BET, pickHeart);
 		System.out.printf("balance now %d\n\n", player.getBalance());
@@ -79,6 +80,7 @@ public class Bug1Test {
 		game = new Game(dHeart, dAnchor, dDiamond);
 		int winnings = game.playRound(player, pickHeart, BET);
 		cdv = game.getDiceValues();
+		System.out.print("One match test");
 		System.out.printf("Rolled %s, %s, %s\n", cdv.get(0), cdv.get(1), cdv.get(2));
 		System.out.printf("%s bet %d on %s\n", player.getName(), BET, pickHeart);
 		System.out.printf("balance now %d\n\n", player.getBalance());
@@ -92,6 +94,7 @@ public class Bug1Test {
 		game = new Game(dHeart, dHeart, dDiamond);
 		int winnings = game.playRound(player, pickHeart, BET);
 		cdv = game.getDiceValues();
+		System.out.print("Two matches test");
 		System.out.printf("Rolled %s, %s, %s\n", cdv.get(0), cdv.get(1), cdv.get(2));
 		System.out.printf("%s bet %d on %s\n", player.getName(), BET, pickHeart);
 		System.out.printf("balance now %d\n\n", player.getBalance());
@@ -105,6 +108,7 @@ public class Bug1Test {
 		game = new Game(dHeart, dHeart, dHeart);
 		int winnings = game.playRound(player, pickHeart, BET);
 		cdv = game.getDiceValues();
+		System.out.print("Three matches test");
 		System.out.printf("Rolled %s, %s, %s\n", cdv.get(0), cdv.get(1), cdv.get(2));
 		System.out.printf("%s bet %d on %s\n", player.getName(), BET, pickHeart);
 		System.out.printf("balance now %d\n\n", player.getBalance());
